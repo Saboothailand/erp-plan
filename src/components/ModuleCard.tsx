@@ -16,7 +16,6 @@ interface ModuleCardProps {
 }
 
 export default function ModuleCard({
-  id,
   title,
   description,
   tables,
