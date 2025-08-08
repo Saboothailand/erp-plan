@@ -1,0 +1,179 @@
+{
+  "common": {
+    "title": "🌟 ERP Saboo Plan",
+    "subtitle": "화장품 제조업 통합 플랫폼",
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "편집",
+    "view": "보기",
+    "add": "추가",
+    "search": "검색",
+    "filter": "필터",
+    "sort": "정렬",
+    "refresh": "새로고침",
+    "back": "뒤로",
+    "next": "다음",
+    "previous": "이전",
+    "close": "닫기",
+    "open": "열기",
+    "yes": "예",
+    "no": "아니오",
+    "ok": "확인",
+    "start": "시작일",
+    "end": "완료일",
+    "tasks": "주요 작업"
+  },
+  "navigation": {
+    "overview": "📊 개요",
+    "modules": "🔧 모듈",
+    "timeline": "📅 일정",
+    "kpis": "📈 KPI",
+    "language": "🌐 언어"
+  },
+  "overview": {
+    "title": "완벽한 화장품 제조업 통합 플랫폼",
+    "description": "B2C + B2B, GMP 22716, ISO 9001, R&D, 공급업체 관리, 역물류까지 모든 비즈니스 프로세스를 통합 관리하는 완전한 ERP 시스템",
+    "stats": {
+      "totalTables": "총 데이터 테이블",
+      "mainModules": "주요 모듈",
+      "implementationWeeks": "구현 주차",
+      "progress": "구현 진행도"
+    },
+    "techStack": {
+      "title": "🛠️ 기술 스택",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind CSS",
+      "supabase": "Supabase",
+      "vercel": "Vercel"
+    },
+    "compliance": {
+      "title": "🏆 규제 준수",
+      "b2c_b2b": "🛒 B2C + B2B",
+      "full_erp": "📊 Full ERP",
+      "gmp": "🧪 GMP 22716",
+      "iso": "🏆 ISO 9001",
+      "reverse_logistics": "🔄 Reverse Logistics",
+      "rd_management": "🔬 R&D Management",
+      "supplier_portal": "🤝 Supplier Portal",
+      "global_compliance": "🇪🇺 Global Compliance"
+    }
+  },
+  "modules": {
+    "title": "🔧 시스템 모듈",
+    "erp": {
+      "title": "🛒 Core ERP System",
+      "description": "주문관리, 재고관리, 재무관리 통합 시스템"
+    },
+    "gmp": {
+      "title": "🧪 GMP 22716",
+      "description": "화장품 우수제조관리기준 준수 시스템"
+    },
+    "iso": {
+      "title": "🏆 ISO 9001",
+      "description": "품질경영시스템 인증 관리"
+    },
+    "rd": {
+      "title": "🔬 R&D Management",
+      "description": "신제품 개발 및 혁신 관리 시스템"
+    },
+    "supplier": {
+      "title": "🤝 Supplier Portal",
+      "description": "공급업체 관리 및 협력 시스템"
+    },
+    "reverse": {
+      "title": "📦 Reverse Logistics",
+      "description": "반품 처리 및 고객 불만 관리 시스템"
+    },
+    "status": {
+      "pending": "준비 중",
+      "in_progress": "진행 중",
+      "completed": "완료"
+    },
+    "tables": "개 테이블",
+    "progress": "구현 진행도"
+  },
+  "timeline": {
+    "title": "📅 구현 일정 (20주)",
+    "phase1": {
+      "title": "핵심 ERP",
+      "description": "기본 ERP + B2C/B2B (60 tables)",
+      "tasks": [
+        "통합 마스터 데이터",
+        "주문-재고-송장 시스템",
+        "기본 재무 모듈"
+      ]
+    },
+    "phase2": {
+      "title": "품질 시스템",
+      "description": "GMP 22716 + ISO 9001 (55 tables)",
+      "tasks": [
+        "GMP 준수 모듈 구축",
+        "ISO 9001 품질경영시스템",
+        "배치 생산 관리"
+      ]
+    },
+    "phase3": {
+      "title": "R&D + 공급업체",
+      "description": "R&D/NPI + 공급업체 관리 (30 tables)",
+      "tasks": [
+        "신제품 개발 시스템",
+        "공급업체 포털",
+        "포뮬러 관리"
+      ]
+    },
+    "phase4": {
+      "title": "역물류 + 규제",
+      "description": "역물류 + 규제 관리 (25 tables)",
+      "tasks": [
+        "고객 불만 처리",
+        "글로벌 규제 준수",
+        "CAPA 시스템"
+      ]
+    },
+    "phase5": {
+      "title": "통합 & 최적화",
+      "description": "시스템 통합 및 성능 최적화",
+      "tasks": [
+        "전체 시스템 통합 테스트",
+        "성능 튜닝",
+        "보안 강화"
+      ]
+    },
+    "phase6": {
+      "title": "교육 & Go-Live",
+      "description": "사용자 교육 및 실운영 시작",
+      "tasks": [
+        "사용자 교육 프로그램",
+        "데이터 마이그레이션",
+        "Go-Live 및 안정화"
+      ]
+    }
+  },
+  "kpis": {
+    "title": "📈 기대 효과",
+    "efficiency": "전체 업무 효율성 향상",
+    "compliance_cost": "규제 준수 비용 절감",
+    "automation": "문서 작업 자동화",
+    "traceability": "제품 추적 가능성",
+    "launch_time": "신제품 출시 시간 단축",
+    "complaint_resolution": "고객 불만 해결 시간 단축",
+    "certification_cost": "인증 유지 비용 절감",
+    "supplier_efficiency": "공급업체 관리 효율화",
+    "inventory_optimization": "재고 최적화",
+    "operational_cost": "전체 운영비용 절감"
+  },
+  "footer": {
+    "copyright": "© 2024 ERP Saboo Plan. 화장품 제조업 통합 플랫폼 구축 프로젝트",
+    "technologies": {
+      "railway": "Railway",
+      "timetable": "Timetable",
+      "github": "GitHub",
+      "supabase": "Supabase",
+      "vercel": "Vercel"
+    }
+  }
+} 

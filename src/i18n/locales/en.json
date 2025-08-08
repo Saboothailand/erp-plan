@@ -1,0 +1,179 @@
+{
+  "common": {
+    "title": "🌟 ERP Saboo Plan",
+    "subtitle": "Cosmetic Manufacturing Integrated Platform",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "refresh": "Refresh",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "start": "Start Date",
+    "end": "End Date",
+    "tasks": "Key Tasks"
+  },
+  "navigation": {
+    "overview": "📊 Overview",
+    "modules": "🔧 Modules",
+    "timeline": "📅 Timeline",
+    "kpis": "📈 KPIs",
+    "language": "🌐 Language"
+  },
+  "overview": {
+    "title": "Complete Cosmetic Manufacturing Integrated Platform",
+    "description": "B2C + B2B, GMP 22716, ISO 9001, R&D, Supplier Management, Reverse Logistics - Complete ERP system for integrated management of all business processes",
+    "stats": {
+      "totalTables": "Total Data Tables",
+      "mainModules": "Main Modules",
+      "implementationWeeks": "Implementation Weeks",
+      "progress": "Implementation Progress"
+    },
+    "techStack": {
+      "title": "🛠️ Technology Stack",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind CSS",
+      "supabase": "Supabase",
+      "vercel": "Vercel"
+    },
+    "compliance": {
+      "title": "🏆 Regulatory Compliance",
+      "b2c_b2b": "🛒 B2C + B2B",
+      "full_erp": "📊 Full ERP",
+      "gmp": "🧪 GMP 22716",
+      "iso": "🏆 ISO 9001",
+      "reverse_logistics": "🔄 Reverse Logistics",
+      "rd_management": "🔬 R&D Management",
+      "supplier_portal": "🤝 Supplier Portal",
+      "global_compliance": "🇪🇺 Global Compliance"
+    }
+  },
+  "modules": {
+    "title": "🔧 System Modules",
+    "erp": {
+      "title": "🛒 Core ERP System",
+      "description": "Order management, inventory management, financial management integrated system"
+    },
+    "gmp": {
+      "title": "🧪 GMP 22716",
+      "description": "Cosmetic Good Manufacturing Practice compliance system"
+    },
+    "iso": {
+      "title": "🏆 ISO 9001",
+      "description": "Quality Management System certification management"
+    },
+    "rd": {
+      "title": "🔬 R&D Management",
+      "description": "New product development and innovation management system"
+    },
+    "supplier": {
+      "title": "🤝 Supplier Portal",
+      "description": "Supplier management and collaboration system"
+    },
+    "reverse": {
+      "title": "📦 Reverse Logistics",
+      "description": "Return processing and customer complaint management system"
+    },
+    "status": {
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "completed": "Completed"
+    },
+    "tables": "tables",
+    "progress": "Implementation Progress"
+  },
+  "timeline": {
+    "title": "📅 Implementation Timeline (20 weeks)",
+    "phase1": {
+      "title": "Core ERP",
+      "description": "Basic ERP + B2C/B2B (60 tables)",
+      "tasks": [
+        "Integrated master data",
+        "Order-inventory-invoice system",
+        "Basic financial module"
+      ]
+    },
+    "phase2": {
+      "title": "Quality System",
+      "description": "GMP 22716 + ISO 9001 (55 tables)",
+      "tasks": [
+        "GMP compliance module construction",
+        "ISO 9001 Quality Management System",
+        "Batch production management"
+      ]
+    },
+    "phase3": {
+      "title": "R&D + Supplier",
+      "description": "R&D/NPI + Supplier Management (30 tables)",
+      "tasks": [
+        "New product development system",
+        "Supplier portal",
+        "Formula management"
+      ]
+    },
+    "phase4": {
+      "title": "Reverse Logistics + Regulatory",
+      "description": "Reverse Logistics + Regulatory Management (25 tables)",
+      "tasks": [
+        "Customer complaint processing",
+        "Global regulatory compliance",
+        "CAPA system"
+      ]
+    },
+    "phase5": {
+      "title": "Integration & Optimization",
+      "description": "System integration and performance optimization",
+      "tasks": [
+        "Complete system integration testing",
+        "Performance tuning",
+        "Security enhancement"
+      ]
+    },
+    "phase6": {
+      "title": "Training & Go-Live",
+      "description": "User training and production operation start",
+      "tasks": [
+        "User training program",
+        "Data migration",
+        "Go-Live and stabilization"
+      ]
+    }
+  },
+  "kpis": {
+    "title": "📈 Expected Benefits",
+    "efficiency": "Overall operational efficiency improvement",
+    "compliance_cost": "Regulatory compliance cost reduction",
+    "automation": "Documentation automation",
+    "traceability": "Product traceability",
+    "launch_time": "New product launch time reduction",
+    "complaint_resolution": "Customer complaint resolution time reduction",
+    "certification_cost": "Certification maintenance cost reduction",
+    "supplier_efficiency": "Supplier management efficiency",
+    "inventory_optimization": "Inventory optimization",
+    "operational_cost": "Overall operational cost reduction"
+  },
+  "footer": {
+    "copyright": "© 2024 ERP Saboo Plan. Cosmetic Manufacturing Integrated Platform Project",
+    "technologies": {
+      "railway": "Railway",
+      "timetable": "Timetable",
+      "github": "GitHub",
+      "supabase": "Supabase",
+      "vercel": "Vercel"
+    }
+  }
+} 

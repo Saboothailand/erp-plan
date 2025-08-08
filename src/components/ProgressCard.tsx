@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface ProgressCardProps {
   title: string;
@@ -22,6 +23,8 @@ export default function ProgressCard({
   endDate,
   tasks = []
 }: ProgressCardProps) {
+  const t = useTranslations();
+
   const getStatusIcon = () => {
     switch (status) {
       case 'completed':
@@ -47,11 +50,11 @@ export default function ProgressCard({
   const getStatusText = () => {
     switch (status) {
       case 'completed':
-        return '완료';
+        return t('modules.status.completed');
       case 'in_progress':
-        return '진행 중';
+        return t('modules.status.in_progress');
       default:
-        return '대기 중';
+        return t('modules.status.pending');
     }
   };
 
@@ -76,7 +79,7 @@ export default function ProgressCard({
       
       <div className="mb-4">
         <div className="flex justify-between text-sm text-gray-600 mb-2">
-          <span>진행률</span>
+          <span>{t('modules.progress')}</span>
           <span>{progress}%</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
@@ -91,14 +94,14 @@ export default function ProgressCard({
 
       {(startDate || endDate) && (
         <div className="text-sm text-gray-500 mb-4">
-          {startDate && <div>시작일: {startDate}</div>}
-          {endDate && <div>완료일: {endDate}</div>}
+          {startDate && <div>{t('common.start')}: {startDate}</div>}
+          {endDate && <div>{t('common.end')}: {endDate}</div>}
         </div>
       )}
 
       {tasks.length > 0 && (
         <div>
-          <h4 className="text-sm font-medium text-gray-900 mb-2">주요 작업</h4>
+          <h4 className="text-sm font-medium text-gray-900 mb-2">{t('common.tasks')}</h4>
           <ul className="space-y-1">
             {tasks.map((task, index) => (
               <li key={index} className="flex items-center text-sm text-gray-600">
