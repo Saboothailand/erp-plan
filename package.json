@@ -1,0 +1,61 @@
+{
+  "name": "cosmetic-manufacturing-platform",
+  "version": "1.0.0",
+  "description": "화장품 제조업 통합 관리 플랫폼 - Complete Cosmetic Manufacturing Integrated Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static HTML site - no build process required'",
+    "start": "vercel dev",
+    "deploy": "vercel --prod",
+    "preview": "vercel",
+    "lint": "echo 'No linting configured for static site'",
+    "test": "echo 'No tests configured yet'"
+  },
+  "keywords": [
+    "cosmetics",
+    "manufacturing",
+    "erp",
+    "gmp-22716",
+    "iso-9001",
+    "quality-management",
+    "supply-chain",
+    "reverse-logistics",
+    "rd-management",
+    "supplier-portal",
+    "regulatory-compliance",
+    "supabase",
+    "vercel",
+    "dashboard",
+    "korean"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-website.com"
+  },
+  "license": "MIT",
+  "homepage": "https://cosmetic-platform.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cosmetic-manufacturing-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/cosmetic-manufacturing-platform/issues"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4"
+  },
+  "devDependencies": {
+    "vercel": "^32.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
