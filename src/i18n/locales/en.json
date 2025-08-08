@@ -31,6 +31,7 @@
     "modules": "🔧 Modules",
     "timeline": "📅 Timeline",
     "kpis": "📈 KPIs",
+    "shopify": "🛒 Shopify Integration",
     "language": "🌐 Language"
   },
   "overview": {
@@ -165,6 +166,124 @@
     "supplier_efficiency": "Supplier management efficiency",
     "inventory_optimization": "Inventory optimization",
     "operational_cost": "Overall operational cost reduction"
+  },
+  "shopify": {
+    "title": "🛒 Shopify Integration Strategy",
+    "current_situation": {
+      "title": "📊 Current Situation",
+      "existing_shopify": {
+        "title": "Existing Shopify Store Operating",
+        "description": "Stable operation as customer touchpoint"
+      },
+      "new_erp": {
+        "title": "New ERP System Development",
+        "description": "Cosmetic manufacturing dedicated integrated management system"
+      }
+    },
+    "integration_goal": {
+      "title": "🎯 Integration Goal",
+      "description": "Complete real-time integration between existing Shopify store and new ERP system for maximum operational efficiency"
+    },
+    "architecture": {
+      "title": "🏗️ Integration Architecture",
+      "shopify": {
+        "title": "Maintain Existing Shopify Store",
+        "features": [
+          "Preserve customer touchpoint and brand experience",
+          "Online order processing",
+          "Payment processing",
+          "Customer communication"
+        ]
+      },
+      "erp": {
+        "title": "Real-time Integration with New ERP System",
+        "features": [
+          "Backend business process integration",
+          "Inventory management",
+          "GMP production",
+          "Quality management"
+        ]
+      }
+    },
+    "integration_method": {
+      "title": "🔄 Integration Method",
+      "webhook": {
+        "title": "Webhook (Shopify → ERP)",
+        "features": [
+          "Real-time order information transmission",
+          "Payment information synchronization",
+          "Customer information updates"
+        ]
+      },
+      "api": {
+        "title": "REST API (ERP → Shopify)",
+        "features": [
+          "Real-time inventory information updates",
+          "Order status synchronization",
+          "Shipping information transmission"
+        ]
+      }
+    },
+    "timeline": {
+      "title": "📅 Integration Implementation Timeline (13 weeks)",
+      "phase1": {
+        "title": "ERP Backend Development",
+        "weeks": "8 weeks",
+        "tasks": [
+          "ERP system core module construction",
+          "Shopify integration API endpoint design",
+          "Database schema optimization"
+        ]
+      },
+      "phase2": {
+        "title": "Shopify Integration API Development",
+        "weeks": "2 weeks",
+        "tasks": [
+          "Shopify Webhook reception system construction",
+          "ERP → Shopify API integration development",
+          "Data mapping and transformation logic implementation"
+        ]
+      },
+      "phase3": {
+        "title": "Integration Testing",
+        "weeks": "2 weeks",
+        "tasks": [
+          "End-to-end integration testing",
+          "Performance testing and optimization",
+          "User acceptance testing"
+        ]
+      },
+      "phase4": {
+        "title": "Data Migration and Go-Live",
+        "weeks": "1 week",
+        "tasks": [
+          "Existing data migration",
+          "System transition and Go-Live",
+          "Monitoring and stabilization"
+        ]
+      }
+    },
+    "costs": {
+      "title": "💰 Estimated Costs",
+      "development": "Integration Development Cost",
+      "infrastructure": "Infrastructure Cost (monthly)",
+      "maintenance": "Maintenance Cost (monthly)",
+      "amounts": {
+        "development": "$15,000",
+        "infrastructure": "$500",
+        "maintenance": "$1,000"
+      }
+    },
+    "benefits": {
+      "title": "🚀 Expected Benefits",
+      "features": [
+        "No disruption to current store operation",
+        "Inventory management automation",
+        "90% improvement in order processing efficiency",
+        "GMP/ISO 9001 quality management systematization",
+        "B2B wholesale functionality addition possible"
+      ]
+    }
   },
   "footer": {
     "copyright": "© 2024 ERP Saboo Plan. Cosmetic Manufacturing Integrated Platform Project",
