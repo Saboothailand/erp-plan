@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { NextIntlClientProvider } from 'next-intl';
 import "./globals.css";
 
 const inter = Inter({
@@ -16,27 +15,15 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
 };
 
-async function getMessages() {
-  try {
-    return (await import('../i18n/locales/ko.json')).default;
-  } catch (error) {
-    return {};
-  }
-}
-
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const messages = await getMessages();
-
   return (
     <html lang="ko">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );
