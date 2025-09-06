@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Globe, Check } from 'lucide-react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { locales, localeNames, localeFlags } from '@/i18n/config';
 
 interface LanguageSelectorProps {
@@ -15,7 +14,7 @@ interface LanguageSelectorProps {
 export default function LanguageSelector({ currentLocale = 'en', className = '' }: LanguageSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleLanguageChange = (locale: string) => {
+  const handleLanguageChange = () => {
     setIsOpen(false);
   };
 

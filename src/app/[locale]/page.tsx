@@ -25,6 +25,8 @@ import {
 import Link from 'next/link';
 import LanguageSelector from '@/components/LanguageSelector';
 import Dashboard from '@/components/Dashboard';
+import ModuleCard from '@/components/ModuleCard';
+import ProgressCard from '@/components/ProgressCard';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 

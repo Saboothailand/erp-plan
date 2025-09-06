@@ -8,7 +8,7 @@ interface ModuleCardProps {
     id: string;
     title: string;
     description: string;
-    icon: React.ComponentType<any>;
+    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
     color: string;
     features: string[];
   };
@@ -27,8 +27,8 @@ const ModuleCard: React.FC<ModuleCardProps> = ({ module, index, hoveredModule, s
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -5, boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }}
       className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 flex flex-col items-center text-center"
-      onMouseEnter={() => setHoveredModule(module.id)}
-      onMouseLeave={() => setHoveredModule(null)}
+      onMouseEnter={() => setHoveredModule?.(module.id)}
+      onMouseLeave={() => setHoveredModule?.(null)}
     >
       <div className={`w-20 h-20 rounded-full flex items-center justify-center mb-6 bg-gradient-to-r ${module.color} text-white shadow-md`}>
         <Icon className="w-10 h-10" />
