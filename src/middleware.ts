@@ -1,27 +1,15 @@
-import { NextRequest, NextResponse } from 'next/server';
+import createMiddleware from 'next-intl/middleware';
+import { locales } from './i18n/config';
 
-const locales = ['en', 'ko', 'th'];
-const defaultLocale = 'en';
-
-export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales: locales,
   
-  // Check if the pathname already has a locale
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
-
-  if (pathnameHasLocale) return;
-
-  // Redirect to default locale if no locale is present
-  const locale = defaultLocale;
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
-}
+  // Used when no locale matches
+  defaultLocale: 'en'
+});
 
 export const config = {
-  matcher: [
-    // Skip all internal paths (_next)
-    '/((?!_next|api|favicon.ico).*)',
-  ],
-}; 
+  // Match only internationalized pathnames
+  matcher: ['/', '/(ko|en|th)/:path*']
+};
