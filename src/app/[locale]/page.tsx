@@ -34,7 +34,7 @@ export default function LocalePage() {
   const [hoveredModule, setHoveredModule] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState('overview');
   const params = useParams();
-  const locale = params.locale as string;
+  const locale = String(params.locale || 'en');
   const t = useTranslations();
 
   const modules = [
