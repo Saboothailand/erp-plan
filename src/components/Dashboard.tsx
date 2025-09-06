@@ -1,16 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, AreaChart, Area } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, AreaChart, Area } from 'recharts';
 import { 
-  ChevronDown, Bell, Search, Settings, Users, TrendingUp, Database, Star, RefreshCw, Edit, Trash2,
-  Package, ShoppingCart, Factory, Truck, ClipboardCheck, AlertTriangle, Calendar, FileText,
-  BarChart3, Globe, Beaker, Shield, Award, QrCode, Scale, MapPin, Timer, CheckCircle, Clock
+  Bell, Settings, Users, TrendingUp, Database, RefreshCw,
+  Package, ShoppingCart, Factory, Truck, ClipboardCheck, AlertTriangle,
+  BarChart3, Beaker, Shield, Award, QrCode, Scale, MapPin, Timer, CheckCircle, Clock
 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 const Dashboard = () => {
-  const [language, setLanguage] = useState('en');
   const [activeModule, setActiveModule] = useState('dashboard');
   const [currentTime, setCurrentTime] = useState(new Date());
 

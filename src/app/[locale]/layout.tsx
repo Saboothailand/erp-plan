@@ -15,7 +15,7 @@ export default async function LocaleLayout({
   params: { locale }
 }: LocaleLayoutProps) {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+  if (!locales.includes(locale as (typeof locales)[number])) notFound();
 
   // Providing all messages to the client
   // side is the easiest way to get started

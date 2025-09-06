@@ -18,7 +18,6 @@ import {
   Globe,
   Shield,
   Target,
-  ShoppingCart,
   ArrowRight,
   CheckCircle,
   Star

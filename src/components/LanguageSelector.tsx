@@ -14,7 +14,6 @@ interface LanguageSelectorProps {
 
 export default function LanguageSelector({ currentLocale = 'en', className = '' }: LanguageSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const t = useTranslations('common');
 
   const handleLanguageChange = (locale: string) => {
     setIsOpen(false);
