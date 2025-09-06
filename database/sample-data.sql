@@ -213,3 +213,4 @@ INSERT INTO marketing_campaigns (campaign_name, description, campaign_type, targ
 
 -- 샘플 데이터 삽입 완료
 SELECT 'Sample data insertion completed successfully!' as status;
+

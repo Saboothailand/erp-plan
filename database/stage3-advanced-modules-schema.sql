@@ -774,3 +774,4 @@ INSERT INTO regulatory_requirements (country_code, regulatory_body, requirement_
 ('EU', 'EC', 'labeling', 'EU Cosmetic Labeling Requirements', 'Mandatory labeling requirements for cosmetics in EU', CURRENT_DATE),
 ('KR', 'MFDS', 'notification', 'Cosmetic Notification System', 'Pre-market notification system for cosmetics', CURRENT_DATE),
 ('TH', 'FDA Thailand', 'testing', 'Safety Testing Requirements', 'Required safety tests for cosmetic products', CURRENT_DATE);
+

@@ -702,3 +702,4 @@ CREATE TRIGGER tr_units_updated_at BEFORE UPDATE ON units FOR EACH ROW EXECUTE F
 CREATE TRIGGER tr_currencies_updated_at BEFORE UPDATE ON currencies FOR EACH ROW EXECUTE FUNCTION update_updated_at();
 CREATE TRIGGER tr_tax_codes_updated_at BEFORE UPDATE ON tax_codes FOR EACH ROW EXECUTE FUNCTION update_updated_at();
 CREATE TRIGGER tr_roles_updated_at BEFORE UPDATE ON roles FOR EACH ROW EXECUTE FUNCTION update_updated_at();
+

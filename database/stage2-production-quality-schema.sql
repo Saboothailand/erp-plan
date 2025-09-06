@@ -775,3 +775,4 @@ INSERT INTO quality_standards (standard_number, title, description, category, st
 ('QS-002', 'Microbiological Testing Method', 'Standard microbiological testing procedures', 'internal', 'test_method', '1.0', CURRENT_DATE, true),
 ('QS-003', 'Physical Properties Testing', 'Physical properties testing procedures', 'internal', 'test_method', '1.0', CURRENT_DATE, true),
 ('QS-004', 'Sensory Evaluation Protocol', 'Sensory evaluation procedures', 'internal', 'protocol', '1.0', CURRENT_DATE, false);
+
