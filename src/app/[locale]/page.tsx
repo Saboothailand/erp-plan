@@ -109,7 +109,12 @@ export default function LocalePage() {
       id: 'phase1',
       title: t('timeline.phase1.title'),
       description: t('timeline.phase1.description'),
-      tasks: t('timeline.phase1.tasks'),
+      tasks: [
+        'Database schema design',
+        'Core ERP module development',
+        'User authentication system',
+        'Basic inventory management'
+      ],
       weeks: '4 weeks',
       status: 'completed'
     },
@@ -117,7 +122,12 @@ export default function LocalePage() {
       id: 'phase2',
       title: t('timeline.phase2.title'),
       description: t('timeline.phase2.description'),
-      tasks: t('timeline.phase2.tasks'),
+      tasks: [
+        'Production management module',
+        'Quality control system',
+        'GMP compliance features',
+        'Batch tracking implementation'
+      ],
       weeks: '4 weeks',
       status: 'completed'
     },
@@ -125,7 +135,12 @@ export default function LocalePage() {
       id: 'phase3',
       title: t('timeline.phase3.title'),
       description: t('timeline.phase3.description'),
-      tasks: t('timeline.phase3.tasks'),
+      tasks: [
+        'R&D management system',
+        'Regulatory compliance',
+        'Supply chain integration',
+        'Advanced reporting'
+      ],
       weeks: '4 weeks',
       status: 'in_progress'
     },
@@ -133,7 +148,12 @@ export default function LocalePage() {
       id: 'phase4',
       title: t('timeline.phase4.title'),
       description: t('timeline.phase4.description'),
-      tasks: t('timeline.phase4.tasks'),
+      tasks: [
+        'CRM integration',
+        'Financial accounting',
+        'Multi-currency support',
+        'API development'
+      ],
       weeks: '4 weeks',
       status: 'pending'
     },
@@ -141,7 +161,12 @@ export default function LocalePage() {
       id: 'phase5',
       title: t('timeline.phase5.title'),
       description: t('timeline.phase5.description'),
-      tasks: t('timeline.phase5.tasks'),
+      tasks: [
+        'Testing and optimization',
+        'Performance tuning',
+        'Security audit',
+        'Documentation'
+      ],
       weeks: '2 weeks',
       status: 'pending'
     },
@@ -149,7 +174,12 @@ export default function LocalePage() {
       id: 'phase6',
       title: t('timeline.phase6.title'),
       description: t('timeline.phase6.description'),
-      tasks: t('timeline.phase6.tasks'),
+      tasks: [
+        'User training',
+        'Data migration',
+        'Go-live support',
+        'Post-launch monitoring'
+      ],
       weeks: '2 weeks',
       status: 'pending'
     }
