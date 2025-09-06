@@ -294,5 +294,43 @@
       "supabase": "Supabase",
       "vercel": "Vercel"
     }
+  },
+  "dashboard": {
+    "totalProducts": "Total Products",
+    "lowStockAlerts": "Low Stock Alerts",
+    "productionOrders": "Production Orders",
+    "pendingOrders": "Pending Orders",
+    "qualityChecks": "Quality Checks",
+    "gmpDocuments": "GMP Documents",
+    "inventoryLevels": "Inventory Levels by Category",
+    "productionEfficiency": "Production Line Efficiency",
+    "gmpCompliance": "GMP 22716 Compliance",
+    "quickActions": "Quick Actions",
+    "recentActivities": "Recent Activities"
+  },
+  "features": {
+    "lotBatchTracking": "Lot/Batch Tracking",
+    "unitConversion": "Unit Conversion",
+    "multiWarehouse": "Multi-Warehouse",
+    "stockValuation": "Stock Valuation",
+    "barcodeIntegration": "Barcode/QR Integration",
+    "realtimeAdjustment": "Real-time Adjustment"
+  },
+  "actions": {
+    "scanBarcode": "Scan Barcode",
+    "qualityCheck": "Quality Check",
+    "newProductionOrder": "New Production Order",
+    "stockAdjustment": "Stock Adjustment"
+  },
+  "activities": {
+    "productionCompleted": "Production batch LOT-2024-156 completed",
+    "faceCreamBatch": "Face Cream - 500kg batch passed quality control",
+    "twoHoursAgo": "2 hours ago",
+    "rawMaterialReceived": "Raw material received",
+    "vitaminEOil": "Vitamin E Oil - 200L from Supplier ABC",
+    "fourHoursAgo": "4 hours ago",
+    "lowStockAlert": "Low stock alert",
+    "packagingBottles": "Packaging bottles below safety stock level",
+    "sixHoursAgo": "6 hours ago"
   }
 } 

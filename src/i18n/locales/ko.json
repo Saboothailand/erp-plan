@@ -23,7 +23,7 @@
     "no": "아니오",
     "ok": "확인",
     "start": "시작일",
-    "end": "완료일",
+    "end": "종료일",
     "tasks": "주요 작업"
   },
   "navigation": {
@@ -41,7 +41,7 @@
       "totalTables": "총 데이터 테이블",
       "mainModules": "주요 모듈",
       "implementationWeeks": "구현 주차",
-      "progress": "구현 진행도"
+      "progress": "진행률"
     },
     "techStack": {
       "title": "🛠️ 기술 스택",
@@ -57,16 +57,16 @@
       "full_erp": "📊 Full ERP",
       "gmp": "🧪 GMP 22716",
       "iso": "🏆 ISO 9001",
-      "reverse_logistics": "🔄 Reverse Logistics",
-      "rd_management": "🔬 R&D Management",
-      "supplier_portal": "🤝 Supplier Portal",
-      "global_compliance": "🇪🇺 Global Compliance"
+      "reverse_logistics": "🔄 역물류",
+      "rd_management": "🔬 R&D 관리",
+      "supplier_portal": "🤝 공급업체 포털",
+      "global_compliance": "🇪🇺 글로벌 규제 준수"
     }
   },
   "modules": {
     "title": "🔧 시스템 모듈",
     "erp": {
-      "title": "🛒 Core ERP System",
+      "title": "🛒 핵심 ERP 시스템",
       "description": "주문관리, 재고관리, 재무관리 통합 시스템"
     },
     "gmp": {
@@ -78,30 +78,30 @@
       "description": "품질경영시스템 인증 관리"
     },
     "rd": {
-      "title": "🔬 R&D Management",
+      "title": "🔬 R&D 관리",
       "description": "신제품 개발 및 혁신 관리 시스템"
     },
     "supplier": {
-      "title": "🤝 Supplier Portal",
+      "title": "🤝 공급업체 포털",
       "description": "공급업체 관리 및 협력 시스템"
     },
     "reverse": {
-      "title": "📦 Reverse Logistics",
+      "title": "📦 역물류",
       "description": "반품 처리 및 고객 불만 관리 시스템"
     },
     "status": {
-      "pending": "준비 중",
+      "pending": "대기",
       "in_progress": "진행 중",
       "completed": "완료"
     },
-    "tables": "개 테이블",
-    "progress": "구현 진행도"
+    "tables": "테이블",
+    "progress": "구현 진행률"
   },
   "timeline": {
     "title": "📅 구현 일정 (20주)",
     "phase1": {
       "title": "핵심 ERP",
-      "description": "기본 ERP + B2C/B2B (60 tables)",
+      "description": "기본 ERP + B2C/B2B (60 테이블)",
       "tasks": [
         "통합 마스터 데이터",
         "주문-재고-송장 시스템",
@@ -110,7 +110,7 @@
     },
     "phase2": {
       "title": "품질 시스템",
-      "description": "GMP 22716 + ISO 9001 (55 tables)",
+      "description": "GMP 22716 + ISO 9001 (55 테이블)",
       "tasks": [
         "GMP 준수 모듈 구축",
         "ISO 9001 품질경영시스템",
@@ -119,7 +119,7 @@
     },
     "phase3": {
       "title": "R&D + 공급업체",
-      "description": "R&D/NPI + 공급업체 관리 (30 tables)",
+      "description": "R&D/NPI + 공급업체 관리 (30 테이블)",
       "tasks": [
         "신제품 개발 시스템",
         "공급업체 포털",
@@ -128,7 +128,7 @@
     },
     "phase4": {
       "title": "역물류 + 규제",
-      "description": "역물류 + 규제 관리 (25 tables)",
+      "description": "역물류 + 규제 관리 (25 테이블)",
       "tasks": [
         "고객 불만 처리",
         "글로벌 규제 준수",
@@ -172,25 +172,25 @@
     "current_situation": {
       "title": "📊 현재 상황",
       "existing_shopify": {
-        "title": "기존 Shopify 쇼핑몰 운영 중",
-        "description": "고객 접점으로 안정적으로 운영"
+        "title": "기존 Shopify 스토어 운영 중",
+        "description": "고객 접점으로 안정적 운영"
       },
       "new_erp": {
-        "title": "신규 ERP 시스템 구축",
+        "title": "신규 ERP 시스템 개발",
         "description": "화장품 제조업 전용 통합 관리 시스템"
       }
     },
     "integration_goal": {
       "title": "🎯 연동 목표",
-      "description": "기존 Shopify 쇼핑몰과 신규 ERP 시스템의 완전한 실시간 연동을 통한 업무 효율성 극대화"
+      "description": "기존 Shopify 스토어와 신규 ERP 시스템 간 완전한 실시간 연동으로 최대 운영 효율성 달성"
     },
     "architecture": {
       "title": "🏗️ 연동 아키텍처",
       "shopify": {
-        "title": "기존 Shopify 쇼핑몰 유지",
+        "title": "기존 Shopify 스토어 유지",
         "features": [
           "고객 접점 및 브랜드 경험 보존",
-          "온라인 주문 접수",
+          "온라인 주문 처리",
           "결제 처리",
           "고객 커뮤니케이션"
         ]
@@ -198,7 +198,7 @@
       "erp": {
         "title": "신규 ERP 시스템과 실시간 연동",
         "features": [
-          "백엔드 비즈니스 프로세스 통합",
+          "백엔드 비즈니스 프로세스 연동",
           "재고 관리",
           "GMP 생산",
           "품질 관리"
@@ -206,11 +206,11 @@
       }
     },
     "integration_method": {
-      "title": "🔄 연동 방식",
+      "title": "🔄 연동 방법",
       "webhook": {
         "title": "Webhook (Shopify → ERP)",
         "features": [
-          "주문 정보 실시간 전송",
+          "실시간 주문 정보 전송",
           "결제 정보 동기화",
           "고객 정보 업데이트"
         ]
@@ -218,7 +218,7 @@
       "api": {
         "title": "REST API (ERP → Shopify)",
         "features": [
-          "재고 정보 실시간 업데이트",
+          "실시간 재고 정보 업데이트",
           "주문 상태 동기화",
           "배송 정보 전송"
         ]
@@ -245,10 +245,10 @@
         ]
       },
       "phase3": {
-        "title": "통합 테스트",
+        "title": "연동 테스트",
         "weeks": "2주",
         "tasks": [
-          "엔드투엔드 통합 테스트",
+          "End-to-end 연동 테스트",
           "성능 테스트 및 최적화",
           "사용자 수용 테스트"
         ]
@@ -265,9 +265,9 @@
     },
     "costs": {
       "title": "💰 예상 비용",
-      "development": "연동 개발비",
+      "development": "연동 개발 비용",
       "infrastructure": "인프라 비용 (월)",
-      "maintenance": "유지보수비 (월)",
+      "maintenance": "유지보수 비용 (월)",
       "amounts": {
         "development": "$15,000",
         "infrastructure": "$500",
@@ -277,9 +277,9 @@
     "benefits": {
       "title": "🚀 기대 효과",
       "features": [
-        "현재 쇼핑몰 운영 중단 없음",
+        "현재 스토어 운영 중단 없음",
         "재고 관리 자동화",
-        "주문 처리 효율 90% 향상",
+        "주문 처리 효율성 90% 향상",
         "GMP/ISO 9001 품질 관리 체계화",
         "B2B 도매 기능 추가 가능"
       ]
@@ -294,5 +294,43 @@
       "supabase": "Supabase",
       "vercel": "Vercel"
     }
+  },
+  "dashboard": {
+    "totalProducts": "총 제품 수",
+    "lowStockAlerts": "재고 부족 알림",
+    "productionOrders": "생산 주문",
+    "pendingOrders": "대기 중인 주문",
+    "qualityChecks": "품질 검사",
+    "gmpDocuments": "GMP 문서",
+    "inventoryLevels": "카테고리별 재고 수준",
+    "productionEfficiency": "생산 라인 효율성",
+    "gmpCompliance": "GMP 22716 준수",
+    "quickActions": "빠른 작업",
+    "recentActivities": "최근 활동"
+  },
+  "features": {
+    "lotBatchTracking": "Lot/Batch 추적",
+    "unitConversion": "단위 변환",
+    "multiWarehouse": "다중 창고",
+    "stockValuation": "재고 평가",
+    "barcodeIntegration": "바코드/QR 연동",
+    "realtimeAdjustment": "실시간 조정"
+  },
+  "actions": {
+    "scanBarcode": "바코드 스캔",
+    "qualityCheck": "품질 검사",
+    "newProductionOrder": "새 생산 주문",
+    "stockAdjustment": "재고 조정"
+  },
+  "activities": {
+    "productionCompleted": "생산 배치 LOT-2024-156 완료",
+    "faceCreamBatch": "페이스 크림 - 500kg 배치 품질 관리 통과",
+    "twoHoursAgo": "2시간 전",
+    "rawMaterialReceived": "원료 입고",
+    "vitaminEOil": "비타민 E 오일 - 공급업체 ABC로부터 200L",
+    "fourHoursAgo": "4시간 전",
+    "lowStockAlert": "재고 부족 알림",
+    "packagingBottles": "포장용 병이 안전 재고 수준 이하",
+    "sixHoursAgo": "6시간 전"
   }
-} 
+}

@@ -1,81 +1,86 @@
 'use client';
 
-import { useState, useTransition } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
-import { useLocale } from 'next-intl';
-import { Globe, ChevronDown } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Globe, Check } from 'lucide-react';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { locales, localeNames, localeFlags } from '@/i18n/config';
 
-const languages = [
-  { code: 'ko', name: '한국어', flag: '🇰🇷' },
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'th', name: 'ไทย', flag: '🇹🇭' }
-];
+interface LanguageSelectorProps {
+  currentLocale?: string;
+  className?: string;
+}
 
-export default function LanguageSelector() {
+export default function LanguageSelector({ currentLocale = 'en', className = '' }: LanguageSelectorProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
-  const pathname = usePathname();
-  const locale = useLocale();
+  const t = useTranslations('common');
 
-  const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
-
-  const handleLanguageChange = (newLocale: string) => {
+  const handleLanguageChange = (locale: string) => {
     setIsOpen(false);
-    
-    startTransition(() => {
-      // Remove the current locale from the pathname
-      const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-      // Navigate to the new locale
-      router.push(`/${newLocale}${pathWithoutLocale}`);
-    });
   };
 
   return (
-    <div className="relative">
+    <div className={`relative ${className}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition-colors"
-        disabled={isPending}
+        className="flex items-center space-x-2 px-4 py-2 bg-white rounded-lg border border-gray-300 hover:border-indigo-500 hover:bg-indigo-50 transition-all duration-200 shadow-sm"
       >
-        <Globe className="w-4 h-4" />
-        <span className="flex items-center space-x-1">
-          <span>{currentLanguage.flag}</span>
-          <span>{currentLanguage.name}</span>
+        <Globe className="w-4 h-4 text-gray-600" />
+        <span className="text-sm font-medium text-gray-700">
+          {localeFlags[currentLocale as keyof typeof localeFlags]} {localeNames[currentLocale as keyof typeof localeNames]}
         </span>
-        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </motion.div>
       </button>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -10, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            transition={{ duration: 0.15 }}
-            className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50"
-          >
-            <div className="py-1">
-              {languages.map((language) => (
-                <button
-                  key={language.code}
-                  onClick={() => handleLanguageChange(language.code)}
-                  className={`w-full flex items-center space-x-3 px-4 py-2 text-sm hover:bg-gray-100 transition-colors ${
-                    locale === language.code ? 'bg-blue-50 text-blue-700' : 'text-gray-700'
-                  }`}
-                >
-                  <span className="text-lg">{language.flag}</span>
-                  <span>{language.name}</span>
-                  {locale === language.code && (
-                    <div className="ml-auto w-2 h-2 bg-blue-600 rounded-full" />
-                  )}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ 
+          opacity: isOpen ? 1 : 0, 
+          y: isOpen ? 0 : -10,
+          scale: isOpen ? 1 : 0.95
+        }}
+        transition={{ duration: 0.2 }}
+        className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 z-50 ${
+          isOpen ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="py-2">
+          {locales.map((locale) => (
+            <Link
+              key={locale}
+              href={`/${locale}`}
+              onClick={() => handleLanguageChange(locale)}
+              className={`flex items-center space-x-3 px-4 py-3 hover:bg-gray-50 transition-colors duration-150 ${
+                currentLocale === locale ? 'bg-indigo-50 text-indigo-700' : 'text-gray-700'
+              }`}
+            >
+              <span className="text-lg">{localeFlags[locale as keyof typeof localeFlags]}</span>
+              <span className="flex-1 text-sm font-medium">
+                {localeNames[locale as keyof typeof localeNames]}
+              </span>
+              {currentLocale === locale && (
+                <Check className="w-4 h-4 text-indigo-600" />
+              )}
+            </Link>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Backdrop */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
     </div>
   );
-} 
+}
