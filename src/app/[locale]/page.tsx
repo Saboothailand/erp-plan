@@ -104,6 +104,57 @@ export default function LocalePage() {
     { value: '80%', label: t('kpis.complaint_resolution'), icon: Users }
   ];
 
+  const timeline = [
+    {
+      id: 'phase1',
+      title: t('timeline.phase1.title'),
+      description: t('timeline.phase1.description'),
+      tasks: t('timeline.phase1.tasks'),
+      weeks: '4 weeks',
+      status: 'completed'
+    },
+    {
+      id: 'phase2',
+      title: t('timeline.phase2.title'),
+      description: t('timeline.phase2.description'),
+      tasks: t('timeline.phase2.tasks'),
+      weeks: '4 weeks',
+      status: 'completed'
+    },
+    {
+      id: 'phase3',
+      title: t('timeline.phase3.title'),
+      description: t('timeline.phase3.description'),
+      tasks: t('timeline.phase3.tasks'),
+      weeks: '4 weeks',
+      status: 'in_progress'
+    },
+    {
+      id: 'phase4',
+      title: t('timeline.phase4.title'),
+      description: t('timeline.phase4.description'),
+      tasks: t('timeline.phase4.tasks'),
+      weeks: '4 weeks',
+      status: 'pending'
+    },
+    {
+      id: 'phase5',
+      title: t('timeline.phase5.title'),
+      description: t('timeline.phase5.description'),
+      tasks: t('timeline.phase5.tasks'),
+      weeks: '2 weeks',
+      status: 'pending'
+    },
+    {
+      id: 'phase6',
+      title: t('timeline.phase6.title'),
+      description: t('timeline.phase6.description'),
+      tasks: t('timeline.phase6.tasks'),
+      weeks: '2 weeks',
+      status: 'pending'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       {/* Header */}
