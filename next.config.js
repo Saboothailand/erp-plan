@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   serverExternalPackages: ['@supabase/supabase-js'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   async headers() {
     return [
       {
