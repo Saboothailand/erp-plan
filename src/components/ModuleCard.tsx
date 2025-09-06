@@ -13,8 +13,8 @@ interface ModuleCardProps {
     features: string[];
   };
   index: number;
-  hoveredModule: string | null;
-  setHoveredModule: (id: string | null) => void;
+  hoveredModule?: string | null;
+  setHoveredModule?: (id: string | null) => void;
 }
 
 const ModuleCard: React.FC<ModuleCardProps> = ({ module, index, hoveredModule, setHoveredModule }) => {
